@@ -32,6 +32,7 @@
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#hecate">HECATE Engine</a></li>
+                    <li><a href="#team">Especialistas</a></li>
                     <li><a href="#benchmark">Diferenciais</a></li>
                     <li><a href="#pricing">Planos</a></li>
                     <li><a href="#contact">Fale Conosco</a></li>
@@ -54,7 +55,7 @@
         </div>
     </div>
 </header>
-
+ 
 <div class="mobile-menu-overlay" id="mobileMenuOverlay">
     <div class="mobile-menu-content">
         <button class="close-menu" aria-label="Fechar Menu" onclick="toggleMobileMenu()">&times;</button>
@@ -74,6 +75,7 @@
                     <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
                     <li><a href="#services" onclick="toggleMobileMenu()">Serviços</a></li>
                     <li><a href="#hecate" onclick="toggleMobileMenu()">HECATE Engine</a></li>
+                    <li><a href="#team" onclick="toggleMobileMenu()">Especialistas</a></li>
                     <li><a href="#benchmark" onclick="toggleMobileMenu()">Diferenciais</a></li>
                     <li><a href="#pricing" onclick="toggleMobileMenu()">Planos</a></li>
                     <li><a href="#contact" onclick="toggleMobileMenu()">Fale Conosco</a></li>

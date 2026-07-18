@@ -912,6 +912,23 @@ input:checked + .slider:before {
     color: var(--text-muted);
 }
 
+.contact-map {
+    width: 100%;
+    height: 250px;
+    border: 1px solid var(--border-card);
+    border-radius: 16px;
+    margin-top: 32px;
+    filter: grayscale(1) invert(0.95) contrast(1.2);
+    opacity: 0.85;
+    transition: var(--transition);
+}
+
+.contact-map:hover {
+    opacity: 1;
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -1304,6 +1321,143 @@ body.menu-open {
     50% { background-color: var(--primary) }
 }
 
+/* --- Team / Experts Section --- */
+.team-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+}
+
+.team-card.featured {
+    border-color: rgba(6, 182, 212, 0.45);
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.1);
+}
+
+.team-card.featured::before {
+    background: var(--primary-gradient);
+}
+
+.team-avatar-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 24px auto;
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(99, 102, 241, 0.2));
+    border: 2px solid rgba(6, 182, 212, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: var(--font-heading);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-card.featured .team-avatar {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(99, 102, 241, 0.4));
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.team-name {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.team-role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.team-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.team-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-skill-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-card.featured .team-skill-tag {
+    background: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.15);
+}
+
+.team-certs {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 16px;
+}
+
+.team-certs strong {
+    color: #fff;
+}
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 991px) {
     .main-nav {
@@ -1339,6 +1493,10 @@ body.menu-open {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .tech-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1349,7 +1507,7 @@ body.menu-open {
 }
 
 @media (max-width: 767px) {
-    .services-grid, .pricing-grid, .footer-grid {
+    .services-grid, .pricing-grid, .footer-grid, .team-grid {
         grid-template-columns: 1fr;
     }
     

@@ -25,6 +25,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#hecate">HECATE Engine</a></li>
+                    <li><a href="#team">Especialistas</a></li>
                     <li><a href="#benchmark">Comparativo</a></li>
                 </ul>
                 <?php
@@ -45,9 +46,9 @@
         <div class="footer-links-col">
             <h4>Contato</h4>
             <ul>
-                <li><i class="fa fa-envelope" style="margin-right: 8px; color: var(--secondary)"></i> contato@cyberbridge.com</li>
-                <li><i class="fa fa-phone" style="margin-right: 8px; color: var(--secondary)"></i> +55 (11) 4003-0800</li>
-                <li><i class="fa fa-map-marker-alt" style="margin-right: 8px; color: var(--secondary)"></i> São Paulo, SP, Brasil</li>
+                <li><i class="fa fa-envelope" style="margin-right: 8px; color: var(--secondary)"></i> ronaldolcoutinho@hotmail.com</li>
+                <li><i class="fa fa-phone" style="margin-right: 8px; color: var(--secondary)"></i> +55 (31) 98435-9511</li>
+                <li><i class="fa fa-map-marker-alt" style="margin-right: 8px; color: var(--secondary)"></i> Belo Horizonte, MG, Brasil</li>
             </ul>
         </div>
     </div>
